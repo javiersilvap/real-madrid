@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Champions League</title>
+    <!-- FONTAWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Cabecera-->
+    <div class="container-grid">
+      <header>
+        <!--NAV BAR-->
+        <nav class="main-nav">
+          <div id="toggle-menu" class="toggle-menu">
+            <label for="toggle-menu-checkbox"><i class="fas fa-bars"></i></label>
+          </div>
+          <input type="checkbox" class="toggle-menu__checkbox" id="toggle-menu-checkbox"/></Input>
+          <ul id="main-menu" class="main-menu">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="../index.html">Inicio</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="../paginas/ultimas_noticias.html">Noticias</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="../paginas/partidos_resultados.html">Resultados</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="../paginas/clasificacion.html">Clasificacion</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Secciones-->
+      <main>
+        <section class="contenedor sombra">
+          <picture>
+            <source srcset="../imagenes/logo.jpeg" media="(min-width: 1201px) and (max-width: 1600px)"/>
+            <source srcset="../imagenes/logo5.jpg" media="(min-width:  768px) and (max-width: 1200px)"/>
+            <source srcset="../imagenes/logo3.jpg" media="(min-width:  100px) and (max-width:  767px)"/>
+            <img src="../imagenes/logo1.jpg" alt="Ejemplo" />
+          </picture>
+          <h2>CLASIFICACION</h2>
+          <div class="grid1">
+            <article>
+              <div>
+                <img src="../imagenes/Grupo_A_B.jpg" alt="Partidos" />
+              </div>
+            </article>
+
+            <article>
+              <div>
+                <img src="../imagenes/Grupo_C_D.jpg" alt="Partidos" />
+              </div>
+            </article>
+
+            <article>
+              <div>
+                <img src="../imagenes/Grupo_E_F.jpg" alt="Partidos" />
+              </div>
+            </article>
+
+            <article>
+              <div>
+                <img src="../imagenes/Grupo_G_H.jpg" alt="Partidos" />
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <!-- Pie de Pagina-->
+      <footer class="footer">
+        <p class="copy">Creado por: Ing. Javier Silva &copy; Marzo 2022</p>
+        <div class="sociales">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
