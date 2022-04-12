@@ -181,8 +181,7 @@ figure img {
   margin-top: 3rem;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  background-image: linear-gradient(to bottom, #0072ff, #84e909);
-}
+  background-image: linear-gradient(to bottom, #094b9b, #84e909);
 
 .grid1 {
   display: grid;
@@ -191,7 +190,7 @@ figure img {
   margin-top: 3rem;
   grid-template-columns: repeat(1, 1fr);
   align-items: center;
-  background-image: linear-gradient(to bottom, #0072ff, #84e909);
+  background-image: linear-gradient(to bottom, #094b9b, #84e909);
 }
 
 header label {
