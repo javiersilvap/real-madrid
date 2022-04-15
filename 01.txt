@@ -1,0 +1,160 @@
+    <style>
+     @keyframes rotacion{
+		 	from{transform: rotateZ(0deg);}
+			to{transform: rotateZ(360deg);}
+		}
+    </style>
+
+
+  <body>
+    <!-- Cabecera-->
+    <div class="container-grid">
+      <header>
+        <!--NAV BAR-->
+        <nav class="main-nav">
+          <div id="toggle-menu" class="toggle-menu">
+            <label for="toggle-menu-checkbox"><i class="fas fa-bars"></i></label>
+          </div>
+          <input type="checkbox" class="toggle-menu__checkbox" id="toggle-menu-checkbox"/></Input>
+          <ul id="main-menu" class="main-menu">
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="#">Inicio</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="./paginas/ultimas_noticias.html">Noticias</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="./paginas/partidos_resultados.html">Resultados</a>
+            </li>
+            <li class="main-menu__item">
+              <a class="main-menu__link" href="./paginas/clasificacion.html">Clasificacion</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section class="contenedor sombra">
+          <picture>
+            <source srcset="./imagenes/logo.jpeg" media="(min-width: 1201px) and (max-width: 1600px)"/>
+            <source srcset="./imagenes/logo5.jpg" media="(min-width:  768px) and (max-width: 1200px)"/>
+            <source srcset="./imagenes/logo3.jpg" media="(min-width:  100px) and (max-width:  767px)"/>
+            <img src="./imagenes/logo1.jpg" alt="Ejemplo" />
+          </picture>
+          <h2>ULTIMAS FINALES</h2>
+          <img id="champions" src="./imagenes/balon2.jpg" alt="Ejemplo" />
+          <div class="grid">
+            <article>
+              <iframe
+                width="350"
+                height="315"
+                src="https://www.youtube.com/embed/h1SAC2B9H7c"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+              <div>
+                <h2>FINAL 2021</h2>
+                <h2>Manchester City 0 Chelsea 1</h2>
+              </div>
+            </article>
+
+            <article>
+              <iframe
+                width="350"
+                height="315"
+                src="https://www.youtube.com/embed/cZZHtRPmMkk"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+              <div>
+                <h2>FINAL 2020</h2>
+                <h2>PSG 0 Bayern de Munich 1</h2>
+              </div>
+            </article>
+
+            <article>
+              <iframe
+                width="350"
+                height="315"
+                src="https://www.youtube.com/embed/B9jLVcuZzSs"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+              <div>
+                <h2>FINAL 2019</h2>
+                <h2>TOTTENHAM 0 LIVERPOOL 2</h2>
+              </div>
+            </article>
+
+            <article>
+              <iframe
+                width="350"
+                height="315"
+                src="https://www.youtube.com/embed/ByWekN7ovy8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+              <div>
+                <h2>FINAL 2018</h2>
+                <h2>Real Madrid 3 Liverpool 1</h2>
+              </div>
+            </article>
+
+            <article>
+              <iframe
+                width="350"
+                height="315"
+                src="https://www.youtube.com/embed/OnAkIkKj13Q"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+              <div>
+                <h2>FINAL 2017</h2>
+                <h2>Real Madrid 4 Juventus 1</h2>
+              </div>
+            </article>
+
+            <article>
+              <iframe
+                width="350"
+                height="315"
+                src="https://www.youtube.com/embed/1rBWpsOPzs4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+              <div>
+                <h2>FINAL 2016</h2>
+                <h2>Real Madrid 1 Atletico 1 (5-3)</h2>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <!-- Pie de Pagina-->
+      <footer class="footer">
+        <p class="copy">Creado por: Ing. Javier Silva &copy; Marzo 2022</p>
+        <div class="sociales">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </footer>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
