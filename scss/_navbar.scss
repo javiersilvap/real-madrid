@@ -1,0 +1,38 @@
+nav {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 100;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0f0101;
+
+  ul {
+    margin: 0 0 0 0rem;
+    display: flex;
+    align-items: stretch;
+    padding: 0;    
+  }
+
+  li {
+    color: white;
+    display: block;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+  
+    a {
+      text-decoration: none;
+      color: white;
+
+
+      &:hover {
+        opacity: 0.65;
+        background-color: #0d0e0d;
+        transition: 0.5s;        
+      }
+    }
+  }
+}
