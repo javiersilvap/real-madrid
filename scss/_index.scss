@@ -2,9 +2,10 @@
   color: $primary-color;
 }
 button {
-  color: $primary-color;
+  color: $text-color;
   border: 2px solid $primary-color;
 }
+
 img {
   width: 100%;
 }
@@ -100,6 +101,7 @@ section {
 .footer {
   grid-area: footer;
   text-align: center;
+  
 }
 
 .grid {
@@ -142,4 +144,60 @@ header label {
   animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+
+.content {
+  @include flexCenter(column);
+  width: 80%;
+  margin: 0 auto;
+
+  &__paragraph--intro {
+    font-weight: map-get($font-weights, bold);
+
+    &:hover {
+      color: yellow;
+    }
+  }
+
+  &__paragraph {
+    @extend .content__paragraph--intro;
+
+    &:hover {
+      color: red;
+    }
+  }
+  /*funciona como una media query*/
+  @include mobile {
+    flex-direction: row;
+  }
+}
+
+.light {
+  @include theme(false);
+}
+
+/*Declaramos nuestro mapa*/
+$redes: (
+  twitter: #9fa0a1,
+  facebook: #3a5795,
+  send-mail: #c25e30,
+);
+
+/*Creamos el bucle para usar los valores del mapa*/
+@each $redsocial, $color in $redes {
+  .btn--#{$redsocial} {
+    background-color: $color;
+    cursor: pointer;
+    padding: 1rem 3rem;
+  }
+}
+
+/*EXTEND*/
+.redsocial {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.redsocial--nueva {
+  @extend .redsocial;
+  border-width: 3px;
 }
