@@ -1,0 +1,203 @@
+.text {
+  color: $primary-color;
+}
+button {
+  color: $text-color;
+  border: 2px solid $primary-color;
+}
+
+img {
+  width: 100%;
+}
+p {
+  line-height: 2;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+.sombra {
+  padding: 2rem;
+  margin-top: 0 auto;
+  margin-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+  -moz-box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+  box-shadow: 0px 11px 15px -9px rgba(0, 0, 0, 0.63);
+}
+
+.contenedor {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  padding: 0;
+  top: 0;
+  position: fixed;
+  z-index: 100;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+}
+
+h3 {
+  padding: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+h5{
+  text-align: justify;
+}
+.col {
+  width: 100%;
+}
+
+main {
+  grid-area: main;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.img-box {
+  text-align: right;
+  margin-top: 0;
+}
+
+.sociales {
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+}
+
+.sociales a {
+  color: #333;
+  text-decoration: none;
+}
+
+/*ESTILO DE FOOTER*/
+.footer {
+  grid-area: footer;
+  text-align: center;
+  
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  background-image: linear-gradient(to bottom, #094b9b, #84e909);
+}
+
+.grid1 {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  margin-top: 3rem;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  background-image: linear-gradient(to bottom, #094b9b, #84e909);
+}
+
+header label {
+  float: right;
+  font-size: 28px;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+#champions {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 80px;
+  width: 280px;
+  height: 280px;
+  animation-name: rotacion;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.content {
+  @include flexCenter(column);
+  width: 80%;
+  margin: 0 auto;
+
+  &__paragraph--intro {
+    font-weight: map-get($font-weights, bold);
+
+    &:hover {
+      color: yellow;
+    }
+  }
+
+  &__paragraph {
+    @extend .content__paragraph--intro;
+
+    &:hover {
+      color: red;
+    }
+  }
+  /*funciona como una media query*/
+  @include mobile {
+    flex-direction: row;
+  }
+}
+
+.light {
+  @include theme(false);
+}
+
+/*Declaramos nuestro mapa*/
+$redes: (
+  twitter: #9fa0a1,
+  facebook: #3a5795,
+  send-mail: #c25e30,
+);
+
+/*Creamos el bucle para usar los valores del mapa*/
+@each $redsocial, $color in $redes {
+  .btn--#{$redsocial} {
+    background-color: $color;
+    cursor: pointer;
+    padding: 1rem 3rem;
+  }
+}
+
+/*EXTEND*/
+.redsocial {
+  border: 1px #f00;
+  background-color: #fdd;
+}
+.redsocial--nueva {
+  @extend .redsocial;
+  border-width: 3px;
+}

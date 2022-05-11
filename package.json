@@ -1,0 +1,20 @@
+{
+  "name": "tercera-entrega",
+  "version": "1.0.0",
+  "description": "CHAMPIONS LEAGUE",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javiersilvap/real-madrid.git"
+  },
+  "keywords": [],
+  "author": "JAVIER SILVA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javiersilvap/real-madrid/issues"
+  },
+  "homepage": "https://github.com/javiersilvap/real-madrid#readme"  
+}
