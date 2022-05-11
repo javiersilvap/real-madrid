@@ -201,3 +201,14 @@ $redes: (
   @extend .redsocial;
   border-width: 3px;
 }
+
+@media screen and (min-width: 768px) {
+  .main-menu {
+    flex-direction: row;
+    transform: translateY(0);
+  }
+
+  .toggle-menu {
+    display: none;
+  }
+} 

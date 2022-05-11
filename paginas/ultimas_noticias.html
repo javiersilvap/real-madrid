@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="champions, noticias, partidos, resultados, clasificacion"/>
+    <meta name="author" content="Ing. Javier Silva" />
+    <meta name="description" content="Aqui van las noticias de la CHAMPIONS LEAGUE"/>
     <link rel="stylesheet" href="../css/style.css"/>
     <title>Ultimas Noticias</title>
     <!-- Bootstrap CSS -->
@@ -15,125 +18,78 @@
       crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet"/>
-    <style>
-      @keyframes rotacion{
-        from{transform: rotateZ(0deg);}
-       to{transform: rotateZ(360deg);}
-     }
-     </style>
   </head>
-  <body>
+  <body class="light">
     <div class="container-grid">
       <header>
-        <!--NAV BAR-->
         <nav class="main-nav">
           <div id="toggle-menu" class="toggle-menu">
-            <label for="toggle-menu-checkbox"><i class="fas fa-bars"></i></label>
+            <label for="toggle-menu-checkbox"><i class="fas fa-bars" style='color: white'></i></label>
           </div>
           <input type="checkbox" class="toggle-menu__checkbox" id="toggle-menu-checkbox"/></Input>
-              <ul id="main-menu" class="main-menu">
-                <li class="main-menu__item">
-                  <a class="main-menu__link text-white fw-bolder" href="../index.html">Inicio</a>
-                </li>
-                <li class="main-menu__item">
-                  <a class="main-menu__link text-white fw-bolder" aria-current="page" href="../paginas/ultimas_noticias.html">Noticias</a>
-                </li>
-                <li class="main-menu__item">
-                  <a class="main-menu__link text-white fw-bolder" aria-current="page" href="../paginas/partidos.html">Partidos</a>
-                </li>
-                <li class="main-menu__item">
-                  <a class="main-menu__link text-white fw-bolder" aria-current="page" href="../paginas/resultados.html">Resultados</a>
-                </li>
-                <li class="main-menu__item">
-                  <a class="main-menu__link text-white fw-bolder" aria-current="page" href="../paginas/clasificacion.html">Clasificacion</a>
-                </li>
-              </ul>
+          <ul id="main-menu" class="main-menu">
+            <li class="main-menu__item"><a class="main-menu__link text-white fw-bolder" href="../index.html">Inicio</a></li>
+            <li class="main-menu__item"><a class="main-menu__link text-white fw-bolder" href="../paginas/ultimas_noticias.html">Noticias</a></li>
+            <li class="main-menu__item"><a class="main-menu__link text-white fw-bolder" href="../paginas/partidos.html">Partidos</a></li>
+            <li class="main-menu__item"><a class="main-menu__link text-white fw-bolder" href="../paginas/resultados.html">Resultados</a></li>
+            <li class="main-menu__item"><a class="main-menu__link text-white fw-bolder" href="../paginas/clasificacion.html">Clasificacion</a></li>
+          </ul>                                                          
         </nav>
       </header>
-
-    <div class="contenedor sombra grid text-center">
-      <img src="../imagenes/logo.jpeg" alt="logo" width="2000"/>
-    </div>
-    <img id="champions" src="../imagenes/balon2.jpg" alt="Ejemplo" />
-
-    <!-- Secciones-->
-    <main>
-      <section class="contenedor sombra grid">
-        <h2 class="text-center fw-bolder">ULTIMAS NOTICIAS</h2>
-        <div class="container">
-          <div class="row text-center">
-            <div class="col-md">
-              <div class="card bg-dark text-light mb-1">
-                <div class="card-body text-center">
-                  <div class="h1 mb-3">
-                    <i class="bi bi-brightness-high"></i>
-                  </div>
-                  <article>
-                    <div>
-                      <h3>Semifinales de Champions League 2022:</h3>
-                      <h5> Las llaves, con equipos ingleses y españoles: Liverpool, Manchester City, Villarreal y Real Madrid.</h5>
-                      <h5>Liverpool, con el colombiano Luis Díaz, y Manchester City se convirtieron este miércoles 13 de abril en los
-                        últimos semifinalistas de la Champions League 2021/2022; ahora ambos equipos ingleses se enfrentarán a dos
-                        españoles para definir a los finalistas de la competición europea.
-                      </h5>
-                      <h5>Ahora se jugarán partidos de ida y vuelta para conocer a los dos equipos que disputarán el título de Champions en
-                        la gran final, que se jugará en el Stade de France de Saint-Denis, el sábado 28 de mayo.
-                      </h5>
+      <div class="contenedor sombra grid text-center">
+        <img src="../imagenes/logo.jpeg" alt="logo" width="2000"/>
+      </div>
+    
+      <!-- Secciones-->
+      <main>
+        <section class="contenedor sombra grid">
+          <h2 class="content__paragraph--intro text-center fw-bolder">ULTIMAS NOTICIAS</h2>
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md">
+                <div class="card bg-dark text-light mb-1">
+                  <div class="card-body text-center">
+                    <div class="h1 mb-3">
+                      <i class="bi bi-brightness-high"></i>
                     </div>
-                  </article>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md">
-              <div class="card bg-dark text-light mb-1">
-                <div class="card-body text-center">
-                  <div class="h1 mb-3">
-                    <i class="bi bi-brightness-high"></i>
+                    <article>
+                      <img src="../imagenes/final.jpeg" alt="Logo" />
+                      <div class="card-body text-center">
+                        <h3 class="content__paragraph--intro card-body text-center fw-bolder">Gran Final de la Champions League 2022:</h3>
+                        <h5 class="content__paragraph--intro card-body text-center fw-bolder">¿Quiénes jugarán la final?</h5>
+                        <h5 class="content__paragraph--intro card-body text-center">El Liverpool, seis veces campeón, se enfrenta al Real Madrid, trece veces campeón,
+                          en una repetición de la final de 2018. Los 'Reds' vencieron al Villarreal por un global de 5-2
+                          en las semifinales, mientras que el Madrid se impuso por 6-5 al Manchester City en una 
+                          eliminatoria vibrante.
+                        </h5>                                                                 
+                      </div>
+                    </article>
                   </div>
-                  <article>
-                    <div>
-                      <h3>Equipos clasificados</h3>
-                      <h5>-Liverpool venció al Benfica con global 6-4</h5>
-                      <h5>-Real Madrid venció al Chelsea con global 5-4</h5>
-                      <h5>-Villarreal venció al Bayern con global 2-1</h5>
-                      <h5>- Manch. City venció al Atlético con global 1-0</h5>
-                      <h5>
-                        Fechas: cuándo se juegan las semifinales de Champions
-                      </h4>
-                      <h5>
-                        Las llaves quedaron así: Liverpool vs. Villarreal y Real Madrid vs. Manchester City
-                      </h5>
-                      <h5>-Ida de semifinales: 26/27 de abril</h5>
-                      <h5>-Vuelta de semifinales: 3/4 de mayo</h5>                    
-                    </div>
-                  </article>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+      </main>
+      
+     <!-- Pie de Pagina-->
+      <footer>
+        <p class="text-center fw-bolder">
+          Creado por: Ing. Javier Silva &copy; Mayo 2022
+        </p>
+        <div class="d-flex flex-row justify-content-center">
+          <a href="#" class="btn btn-outline-primary"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="btn btn-outline-primary"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="btn btn-outline-primary"><i class="fab fa-linkedin"></i></a>
+          <a href="#" class="btn btn-outline-primary"><i class="fab fa-instagram"></i></a>
         </div>
-      </section>
-    </main>
+      </footer>
 
-    <!-- Pie de Pagina-->
-    <footer>
-      <p class="text-center fw-bolder">
-        Creado por: Ing. Javier Silva &copy; Abril 2022
-      </p>
-      <div class="d-flex flex-row justify-content-center">
-        <a href="#" class="btn btn-outline-primary"><i class="fab fa-facebook"></i></a>
-        <a href="#" class="btn btn-outline-primary"><i class="fab fa-twitter"></i></a>
-        <a href="#" class="btn btn-outline-primary"><i class="fab fa-linkedin"></i></a>
-        <a href="#" class="btn btn-outline-primary"><i class="fab fa-instagram"></i></a>
-      </div>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-  </script>
-  </div>
+     <!-- Bootstrap JS -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+      </script>        
+    </div>                 
   </body>
 </html>

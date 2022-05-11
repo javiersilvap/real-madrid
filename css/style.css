@@ -4,23 +4,39 @@
   box-sizing: border-box;
 }
 
-nav {
+.main-menu {
   list-style: none;
   margin-top: 0;
-  margin-bottom: 100;
-  padding-left: 0;
+  margin-bottom: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #0f0101;
+  transition: transform 1s;
+  transform: translateY(-100%);
 }
-nav ul {
+
+.main-menu__show {
+  transform: translateY(0);
+}
+
+.toggle-menu__checkbox {
+  display: none;
+}
+
+.toggle-menu__checkbox:checked + .main-menu {
+  transform: translateY(0);
+}
+
+.main-menu__item {
   margin: 0 0 0 0rem;
-  display: flex;
+  display: inline-block;
   align-items: stretch;
   padding: 0;
 }
-nav li {
+
+.main-menu__link {
   color: white;
   display: block;
   padding: 20px 40px;
@@ -28,13 +44,11 @@ nav li {
   text-decoration: none;
   border-radius: 3px;
 }
-nav li a {
-  text-decoration: none;
-  color: white;
-}
-nav li a:hover {
+
+.main-menu__link:hover,
+.main-menu__link:focus {
   opacity: 0.65;
-  background-color: #0d0e0d;
+  background-color: #42b881;
   transition: 0.5s;
 }
 
@@ -240,6 +254,17 @@ header label {
 
 .redsocial--nueva {
   border-width: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .main-menu {
+    flex-direction: row;
+    transform: translateY(0);
+  }
+
+  .toggle-menu {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
